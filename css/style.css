@@ -87,3 +87,7 @@ body {
   list-style-type: none;
   color: darkgreen;
 }
+.map {
+  height: 500px; 
+  width: 100%
+}
