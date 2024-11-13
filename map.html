@@ -20,12 +20,15 @@
   </nav>
   <div id="map"></div>div>
   <script>
+    init();
     var map;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 41.8729, lng: -87.62793},
         zoom: 8;
     }
+
+    
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr06XgFmTqX-jyP99kNQQb57yOzlE10Wg&loading=async&callback=initMap" async defer></script>
 </body>
