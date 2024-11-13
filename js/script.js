@@ -32,4 +32,12 @@ function initMap() {
   google.maps.event.addListener(marker, 'mouseover', function() {
     infowindow.open(myMap, marker);
   });
-
+  
+ // add custom street view
+  var streetViewControl = new google.maps.StreetViewPanorama(document.getElementById('street-view'), {
+    position: myLocation,
+    pov: { heading: 165, pitch: 0 }
+  });
+  
+  myMap.setStreetView(streetViewControl);
+}
