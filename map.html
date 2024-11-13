@@ -9,7 +9,7 @@
   <script src="js/script.js"></script>
 </head>
 
-<body>
+<body id = map-body>
   <nav id="navigation">
     <ul class="nav">
       <li><a href="index.html">Professional Resume</a></li>
@@ -18,10 +18,12 @@
       <li><a href="map.html">Map</a></li>
     </ul>
   </nav>
-  <!-- Make sure the map div has a height defined -->
-  <div id="map" style="height: 500px;"></div>
-  <div id="street-view" style="height: 400px;"></div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIWGeBWMq1N3gGBBltdTBS1D953KC2S0o&loading=async&callback=initMap" async defer></script>
+  <div id="map"></div>
+
+  <div id="street-view"></div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIWGeBWMq1N3gGBBltdTBS1D953KC2S0o&callback=initMap" async defer></script>
+  
 </body>
 </html>
