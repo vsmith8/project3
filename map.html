@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
   <title>Victoria Smith: Project 3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
 
@@ -19,21 +19,6 @@
     </ul>
   </nav>
   <div id="map"></div>
-  <script>
-    var map;
-    function init() {
-  alert("it works");
-}
-
-google.maps.event.addDomListener(window, 'load', init);
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 41.8729, lng: -87.62793},
-        zoom: 8;
-    }
-
-    
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr06XgFmTqX-jyP99kNQQb57yOzlE10Wg&loading=async&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIWGeBWMq1N3gGBBltdTBS1D953KC2S0o&loading=async&callback=initMap" async defer></script>
 </body>
 </html>
