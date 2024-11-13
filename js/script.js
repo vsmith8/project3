@@ -33,7 +33,24 @@ function initMap() {
     infowindow.open(myMap, marker);
   });
   
- // add custom street view
+  // adding section location
+  var secondLocation = new google.maps.LatLng(42.402640, -86.282971); // North Beach
+
+  var secondMarker = new google.maps.Marker({
+    position: secondLocation,
+    map: myMap,
+    animation: google.maps.Animation.DROP, // Drop animation for the icon
+  });
+
+  var secondInfoWindow = new google.maps.InfoWindow({
+    content: '<h1>North Beach and South Haven Pier</h1><p>This really fun part of town on the public beach with easy pier and harbor access.</p>'
+  });
+
+  google.maps.event.addListener(secondMarker, 'mouseover', function() {
+    secondInfoWindow.open(myMap, secondMarker);
+  });
+  
+  // add custom street view
   var streetViewControl = new google.maps.StreetViewPanorama(document.getElementById('street-view'), {
     position: myLocation,
     pov: { heading: 165, pitch: 0 }
