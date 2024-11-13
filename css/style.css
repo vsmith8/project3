@@ -87,14 +87,3 @@ body {
   list-style-type: none;
   color: darkgreen;
 }
-#map-body {
-      height: 100%;
-      margin: 0;
-  }
-#map {
-  height: 500px;
-  width: 100%;
-}
-#street-view {
-  height: 400px;
-}
