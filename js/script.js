@@ -28,13 +28,13 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow({
     content: contentString
   });
-  
+
   google.maps.event.addListener(marker, 'mouseover', function() {
     infowindow.open(myMap, marker);
   });
-  
-  // adding section location
-  var secondLocation = new google.maps.LatLng(42.402640, -86.282971); // North Beach
+
+  // adding second location (North Beach)
+  var secondLocation = new google.maps.LatLng(42.402640, -86.282971);
 
   var secondMarker = new google.maps.Marker({
     position: secondLocation,
@@ -49,12 +49,4 @@ function initMap() {
   google.maps.event.addListener(secondMarker, 'mouseover', function() {
     secondInfoWindow.open(myMap, secondMarker);
   });
-  
-  // add custom street view
-  var streetViewControl = new google.maps.StreetViewPanorama(document.getElementById('street-view'), {
-    position: myLocation,
-    pov: { heading: 165, pitch: 0 }
-  });
-  
-  myMap.setStreetView(streetViewControl);
 }
