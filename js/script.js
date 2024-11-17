@@ -1,9 +1,9 @@
 function initMap() {
   var el = document.getElementById('map');
-  var myLocation = new google.maps.LatLng(42.401489, -86.272621);
+  var ace = new google.maps.LatLng(42.401489, -86.272621);
 
   var mapOptions = {
-    center: myLocation,
+    center: ace,
     zoom: 16,
     mapTypeId: google.maps.MapTypeId.SATELLITE,
     mapTypeControlOptions: {
@@ -18,7 +18,7 @@ function initMap() {
   var myMap = new google.maps.Map(el, mapOptions);
 
   var marker = new google.maps.Marker({
-    position: myLocation,
+    position: ace,
     map: myMap,
     animation: google.maps.Animation.BOUNCE,
   });
