@@ -1,6 +1,6 @@
 function initMap() {
   var el = document.getElementById('map');
-  var myLocation = new google.maps.LatLng(42.403115, -86.275943);
+  var myLocation = new google.maps.LatLng(42.401489, -86.272621);
 
   var mapOptions = {
     center: myLocation,
@@ -23,7 +23,7 @@ function initMap() {
     animation: google.maps.Animation.BOUNCE,
   });
 
-  var contentString = '<h1>West End of Downtown South Haven</h1><p>The western end of the South Haven downtown area. Just around the corner is this incredible hot dog restaurant called Chomp. I am starving right now. Send help. :( </p>';
+  var contentString = '<h1>Wolverine Ace Hardware</h1>';
 
   var infowindow = new google.maps.InfoWindow({
     content: contentString
@@ -33,7 +33,6 @@ function initMap() {
     infowindow.open(myMap, marker);
   });
 
-  // adding second location (North Beach)
   var secondLocation = new google.maps.LatLng(42.402640, -86.282971);
 
   var secondMarker = new google.maps.Marker({
