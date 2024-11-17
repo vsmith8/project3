@@ -32,4 +32,16 @@ function initMap() {
   google.maps.event.addListener(marker, 'mouseover', function() {
     infowindow.open(myMap, marker);
   });
+  
+  const pic = document.createElement("img");
+
+  pic.src =
+  "images/download.jpg";
+
+  const beachFlagMarkerView = new AdvancedMarkerElement({
+    map,
+    position: ace,
+    content: pic,
+    title: "A marker using a custom PNG Image",
+  });
 }
