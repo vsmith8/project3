@@ -87,3 +87,59 @@ body {
   list-style-type: none;
   color: darkgreen;
 }
+@media (max-width: 600px) {
+  nav#navigation ul {
+    left: 0;
+    text-align: center;
+  }
+
+  nav#navigation ul li {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav#navigation ul li a {
+    font-size: 1.2em;
+    padding: 10px 0;
+    background-color: lightpink;
+  }
+
+  .pics {
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  .rtitles {
+    font-size: 1.5em;
+  }
+
+  .ptitle {
+    font-size: 1.5em;
+  }
+  .ftitles {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  nav#navigation ul {
+    left: 20%;
+  }
+  nav#navigation ul li a {
+    font-size: 1.5em;
+  }
+
+  .pics {
+    width: 40%;
+  }
+  .rtitles {
+    font-size: 3em;
+  }
+
+  .ptitle {
+    font-size: 3em;
+  }
+  .ftitles {
+    font-size: 3em;
+  }
+}
